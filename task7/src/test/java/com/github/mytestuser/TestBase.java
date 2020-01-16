@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -36,7 +37,11 @@ public class TestBase {
     @Before
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "D:\\projects\\chromedriver.exe");
-        driver = new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless", "--disable-gpu", "--window-size=1366,768","--ignore-certificate-errors");
+        //chromeOptions.setHeadless(true);
+
+        driver = new ChromeDriver(chromeOptions);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
