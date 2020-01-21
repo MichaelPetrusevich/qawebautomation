@@ -11,7 +11,7 @@ import org.junit.runners.Suite;
         SearchandDeleteCoupon.class,
         Logout.class
 })
-public class MySuite extends TestBase {
+public class MySuiteTest extends TestBase {
 
     @BeforeClass
     public static void suiteSetUp() {

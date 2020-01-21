@@ -1,0 +1,6 @@
+com\github\mytestuser\MySuiteTest.class
+com\github\mytestuser\TestBase.class
+com\github\mytestuser\Logout.class
+com\github\mytestuser\CreateCoupon.class
+com\github\mytestuser\CouponeData.class
+com\github\mytestuser\SearchandDeleteCoupon.class

@@ -9,5 +9,6 @@ public class Logout extends TestBase {
     public void logoutTest() {
         logout();
         Assert.assertEquals("Login - Open eShop",headingLogout);
+        log.info("Logout");
     }
 }

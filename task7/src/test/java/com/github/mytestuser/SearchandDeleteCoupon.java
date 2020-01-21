@@ -10,6 +10,7 @@ public class SearchandDeleteCoupon extends TestBase {
         gotoPanelCoupons();
         searchCoupon("abyrwalg");
         Assert.assertEquals(1,countRowCoupon);
+        log.info("Search coupone");
     }
 
     @Test
@@ -20,5 +21,6 @@ public class SearchandDeleteCoupon extends TestBase {
 
         searchCoupon("abyrwalg");
         Assert.assertEquals(0,countRowCoupon);
+        log.info("Delete coupone");
     }
 }

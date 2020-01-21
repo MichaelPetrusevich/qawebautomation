@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.github.mytestuser.MySuiteTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 150.844 s - in com.github.mytestuser.MySuiteTest

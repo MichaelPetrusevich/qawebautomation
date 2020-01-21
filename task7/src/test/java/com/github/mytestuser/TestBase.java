@@ -1,5 +1,6 @@
 package com.github.mytestuser;
 
+import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.By;
@@ -11,6 +12,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
+    public static final Logger log =Logger.getLogger(TestBase.class);
     ChromeDriver driver;
     String valueNameCoupone;
     String messageCreateCoupon;
@@ -46,7 +48,9 @@ public class TestBase {
         driver.manage().window().maximize();
 
         driver.get("http://open-eshop.stqa.ru/oc-panel/auth/login");
+        log.info("Open testing website");
         login("demo@open-eshop.com", "demo");
+        log.info("Login with username and password");
     }
 
     @After

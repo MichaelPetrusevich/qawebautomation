@@ -11,6 +11,7 @@ public class CreateCoupon extends TestBase {
         gotoPanelCoupons();
         createCoupon(new CouponeData("abyrwalg", "2020-01-01", "333"));
         Assert.assertEquals("Success",messageCreateCoupon);
+        log.info("Create coupone");
     }
 
     @Test
@@ -18,5 +19,6 @@ public class CreateCoupon extends TestBase {
         gotoPanelCoupons();
         getCoupon("abyrwalg");
         Assert.assertEquals("abyrwalg",valueNameCoupone);
+        log.info("Find coupone");
     }
 }
